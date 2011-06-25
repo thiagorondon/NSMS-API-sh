@@ -45,12 +45,12 @@ function send {
 	curl --data-urlencode "content=$message" -L -X GET "$url"
 }
 
-if [ ! -z $username ] ; then
+if [[ ! -z $username && ! -z $password ]] ; then
 	run=1
 	auth
 fi
 
-if [ ! -z $to ] ; then
+if [[ ! -z $to && ! -z $message ]] ; then
 	run=1
 	send
 fi
