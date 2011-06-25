@@ -1,0 +1,16 @@
+
+Script para envio de SMS pela NSMS via sh.
+
+
+Para utilizar o script, é muito simples, você pode se autenticar bastando enviar os parâmetros:
+
+$ ./nsms.sh -u usuario -p senha
+
+Para enviar um SMS, basta:
+
+$ ./nsms.sh -t 1100000000 -m 'minha mensagem de sms'
+
+Qualquer dúvida, entre em contato pelo e-mail suporte@nsms.com.br.
+
+http://www.nsms.com.br.
+
